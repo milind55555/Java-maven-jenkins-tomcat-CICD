@@ -29,8 +29,8 @@ pipeline {
                         url: 'http://13.201.8.234:8080'
                     )
                 ],
-                contextPath: 'myapp',
-                war: '**/*.war'
+                contextPath: '',
+                war: 'ROOT.war'
             }
         }
     }
