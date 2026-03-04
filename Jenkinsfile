@@ -8,10 +8,11 @@ pipeline {
     stages {
 
         stage('Checkout Code') {
-            steps {
-                git 'https://github.com/milind55555/Java-maven-jenkins-tomcat-CICD.git'
-            }
-        }
+    steps {
+        git branch: 'main',
+            url: 'https://github.com/milind55555/Java-maven-jenkins-tomcat-CICD.git'
+    }
+}
 
         stage('Build WAR') {
             steps {
